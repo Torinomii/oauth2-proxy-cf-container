@@ -1,3 +1,7 @@
+## About
+
+This repository provides a test implementation of oauth2-proxy running on Cloudflare Containers.
+It is intended for development and evaluation purposes, demonstrating how to deploy an authentication proxy within a container-based serverless environment on Cloudflare.
 
 ## How Use
 
