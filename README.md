@@ -11,8 +11,11 @@ It is intended for development and evaluation purposes, demonstrating how to dep
     - [oauth2-proxy Configuration Docs](https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview/) 
 3. Importing a GitHub Repository into Cloudflare Workers
 4. Define the environment secrets for your Worker used at runtime
-| OAUTH2_PROXY_COOKIE_SECRET | |
-| OAUTH2_PROXY_CLIENT_ID     | |
-| OAUTH2_PROXY_CLIENT_SECRET | |
+
+| Environment Variables      |  Value   |
+| :---: | :---: |
+| OAUTH2_PROXY_COOKIE_SECRET |          |
+| OAUTH2_PROXY_CLIENT_ID     |          |
+| OAUTH2_PROXY_CLIENT_SECRET |          |
 
 ## Option：
