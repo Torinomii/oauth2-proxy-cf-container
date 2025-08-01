@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "oauth2-proxy-cf-container",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "containers": [
+    {
+      "name": "oauth2-proxy",
+      "class_name": "OAuth2ProxyContainer", 
+      "image": "./Dockerfile",
+      "max_instances": 1
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "OAuth2ProxyContainer",
+        "name": "OAUTH2_PROXY"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "new_sqlite_classes": ["OAuth2ProxyContainer"],
+      "tag": "v1"
+    }
+  ]
+}

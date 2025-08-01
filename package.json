@@ -1,0 +1,21 @@
+{
+  "name": "oauth2-proxy-cf-container",
+  "version": "1.0.0",
+  "description": "OAuth2 Proxy running on Cloudflare Containers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "typescript": "5.8.3",
+    "wrangler": "^4.25.0"
+  },
+  "dependencies": {
+    "@cloudflare/containers": "^0.0.19",
+    "hono": "4.8.2"
+  }
+}
